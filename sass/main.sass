@@ -1,0 +1,380 @@
+@import "reset"
+@import "vars"
+
+.body
+  overflow-x: hidden
+  font-family: $main_font
+  position: relative
+  overflow: hidden
+
+%container
+  font-family: $main_font
+  width: 1170px
+  margin: 0 auto
+  padding: 0
+  height: 100%
+
+%btn
+  color: #fff
+  padding: 0 30px
+  text-align: center
+  background-color: $main_color
+  height: 50px
+  line-height: 50px
+  font-size: 18px
+  font-weight: 700
+  box-shadow: 0px 30px 30px 0px rgba(76, 169, 255, 0.3)
+  text-transform: uppercase
+  border-radius: 25px
+
+%txt
+  font-size: 18px
+  font-weight: 400
+  line-height: 30px
+  color: #6a707d
+
+//header
+.header
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100px
+  line-height: 100px
+  background-color: none
+  z-index: 500
+  &__container
+    @extend %container
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__logo
+    vertical-align: baseline
+  &__btn
+    width: 80px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &__menu
+      font-size: 18px
+      font-weight: 400
+      color: #fff
+    &__lines
+      vertical-align: middle
+
+
+//start
+.start
+  height: 850px
+  background-image: url("../img/start.png")
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  width: 100%
+  &__container
+    @extend %container
+    height: 50%
+    display: flex
+    align-items: flex-end
+    justify-content: center
+  &__tittle
+    font-size: 90px
+    font-weight: 300
+    color: #fff
+    >span
+      color: $main_color
+  &__rows
+    width: 30px
+    height: 70px
+    margin-bottom: 70px
+
+
+
+//about us
+.about
+  width: 100%
+  height: 500px
+  &__container
+    @extend %container
+    padding: 100px 0 120px 0
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+  &__title
+    height: 100%
+    width: 200px
+    >h2
+      font-size: 48px
+      font-weight: 300
+      color: #40485a
+      margin-bottom: 30px
+  &__line
+    width: 80px
+    height: 3px
+    background-color: #4a24a8
+    border-radius: 10px
+  &__text
+    width: 670px
+    display: flex
+    align-items: flex-start
+    @extend %txt
+
+
+
+//workpic
+.workpic
+  width: 100%
+  height: 250px
+  &__cont
+    width: 100%
+    margin: 0 auto
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+  &__item
+    height: 100%
+    >img
+      height: 100%
+      width: 100%
+
+
+//what we do
+.what
+  width: 100%
+  height: 795px
+  background-color: #fff
+  &__container
+    @extend %container
+    display: flex
+    flex-direction: column
+    align-items: center
+    >h3
+      color: #40485a
+      font-size: 48px
+      font-weight: 300
+      margin: 95px 0 40px 0
+  &__line
+    width: 80px
+    height: 3px
+    background-color: #4a24a8
+    border-radius: 10px
+    margin-bottom: 40px
+  &__content
+    width: 100%
+    height: 438px
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__item
+    width: 370px
+    height: 388px
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 50px 50px 0 50px
+    transition: all .5s
+    &__pic
+      height: 120px
+    >h4
+      font-size: 18px
+      font-weight: 700
+      text-transform: uppercase
+      margin: 50px 0 20px 0
+    >p
+      @extend %txt
+      text-align: center
+    &:hover
+      box-shadow: 0px 30px 60px 0px rgba(64, 72, 90, 0.15)
+      transform: translateY(-10px)
+
+
+  &__show
+    border-bottom: 3px solid $main_color
+    text-transform: uppercase
+    margin-bottom: 80px
+    >a
+      font-size: 18px
+      color: $main_color
+      font-weight: 500
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//payme blue background
+.payme
+  width: 100%
+  height: 700px
+  background-image: url("../img/paymeback.png")
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  //paymecont1
+  &__cont1
+    @extend %container
+    height: 550px
+    display: flex
+    justify-content: space-between
+  &__text
+    width: 570px
+    height: 100%
+    >h2
+      margin: 140px 0 30px 0
+      font-size: 62px
+      font-weight: 300
+      color: #fff
+      >span
+        color: $main_color
+    >p
+      margin-bottom: 70px
+      @extend %txt
+      color: #cfd2ff
+  &__btn
+      @extend %btn
+      display: inline-block
+
+
+  &__screens
+    width: 470px
+    height: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__screen1
+    width: 200px
+    height: 355px
+    overflow: hidden
+    background-image: url("../img/screen1.png")
+    border-radius: 5px
+    box-shadow: 0px 50px 30px 0px rgba(64, 72, 90, 0.5)
+    &:hover
+      transform: translateY(-20px)
+  &__screen2
+    width: 200px
+    height: 355px
+    overflow: hidden
+    background-image: url("../img/screen2.png")
+    border-radius: 5px
+    box-shadow: 0px 50px 30px 0px rgba(64, 72, 90, 0.5)
+    &:hover
+      transform: translateY(-20px)
+  //paymecont2
+  &__cont2
+    @extend %container
+    height: 150px
+    display: flex
+    justify-content: space-between
+    border-top: 1px solid #7a62b7
+  &__sec
+    width: 270px
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: flex-start
+    box-sizing: border-box
+    >h4
+      font-size: 16px
+      color: #a8a4e2
+      font-weight: 400
+      text-transform: uppercase
+    >h3
+      font-size: 24px
+      color: #fff
+      font-weight: 400
+    &:hover
+      border-top: 3px solid #fff
+
+
+//twitter
+.twitter
+  width: 100%
+  height: 560px
+  background-color: #fff
+  &__container
+    @extend %container
+    display: flex
+    flex-direction: column
+    align-items: center
+    >img
+      height: 50px
+      margin: 50px 0 50px 0
+  &__box
+    box-shadow: 0px 30px 60px 0px rgba(64, 72, 90, 0.15)
+    width: 830px
+    height: 300px
+    display: flex
+    flex-direction: column
+    align-items: center
+    >p
+      margin: 50px 60px 35px 60px
+      @extend %txt
+      font-size: 24px
+      line-height: 34px
+      font-weight: 300
+      text-align: center
+      >span
+        color: $main_color
+  &__author
+    width: 220px
+    height: 65px
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__text
+    margin-left: 15px
+    >h7
+      font-size: 18px
+      font-weight: 400
+      &.blue
+        color: $main_color
+
+
+//footer
+.footer
+  width: 100%
+  height: 350px
+  background-image: url("../img/footerback.png")
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  &__cont1
+    @extend %container
+    height: 300px
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__btn
+    @extend %btn
+    padding: 0 48px
+  &__text
+    width: 670px
+    >p
+      padding-top: 30px
+      @extend %txt
+      color: #cfd2ff
+  &__cont2
+    @extend %container
+    height: 50px
+    box-sizing: border-box
+    border-top: 1px solid #7a62b7
+    display: flex
+    justify-content: space-between
+    align-items: center
+    >h7
+      font-size: 14px
+      font-weight: 400
+      text-transform: uppercase
+      color: #fff
+      >span
+        color: $main_color

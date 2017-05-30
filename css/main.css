@@ -1,0 +1,512 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.body {
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.header__container, .start__container, .about__container, .what__container, .payme__cont1, .payme__cont2, .twitter__container, .footer__cont1, .footer__cont2 {
+  font-family: "Roboto", sans-serif;
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0;
+  height: 100%;
+}
+
+.payme__btn, .footer__btn {
+  color: #fff;
+  padding: 0 30px;
+  text-align: center;
+  background-color: #4ba9ff;
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  font-weight: 700;
+  box-shadow: 0px 30px 30px 0px rgba(76, 169, 255, 0.3);
+  text-transform: uppercase;
+  border-radius: 25px;
+}
+
+.about__text, .what__item > p, .payme__text > p, .twitter__box > p, .footer__text > p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #6a707d;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  background-color: none;
+  z-index: 500;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  vertical-align: baseline;
+}
+
+.header__btn {
+  width: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__btn__menu {
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.header__btn__lines {
+  vertical-align: middle;
+}
+
+.start {
+  height: 850px;
+  background-image: url("../img/start.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
+.start__container {
+  height: 50%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.start__tittle {
+  font-size: 90px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.start__tittle > span {
+  color: #4ba9ff;
+}
+
+.start__rows {
+  width: 30px;
+  height: 70px;
+  margin-bottom: 70px;
+}
+
+.about {
+  width: 100%;
+  height: 500px;
+}
+
+.about__container {
+  padding: 100px 0 120px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.about__title {
+  height: 100%;
+  width: 200px;
+}
+
+.about__title > h2 {
+  font-size: 48px;
+  font-weight: 300;
+  color: #40485a;
+  margin-bottom: 30px;
+}
+
+.about__line {
+  width: 80px;
+  height: 3px;
+  background-color: #4a24a8;
+  border-radius: 10px;
+}
+
+.about__text {
+  width: 670px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.workpic {
+  width: 100%;
+  height: 250px;
+}
+
+.workpic__cont {
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.workpic__item {
+  height: 100%;
+}
+
+.workpic__item > img {
+  height: 100%;
+  width: 100%;
+}
+
+.what {
+  width: 100%;
+  height: 795px;
+  background-color: #fff;
+}
+
+.what__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.what__container > h3 {
+  color: #40485a;
+  font-size: 48px;
+  font-weight: 300;
+  margin: 95px 0 40px 0;
+}
+
+.what__line {
+  width: 80px;
+  height: 3px;
+  background-color: #4a24a8;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.what__content {
+  width: 100%;
+  height: 438px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.what__item {
+  width: 370px;
+  height: 388px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 50px 0 50px;
+  transition: all .5s;
+}
+
+.what__item__pic {
+  height: 120px;
+}
+
+.what__item > h4 {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 50px 0 20px 0;
+}
+
+.what__item > p {
+  text-align: center;
+}
+
+.what__item:hover {
+  box-shadow: 0px 30px 60px 0px rgba(64, 72, 90, 0.15);
+  transform: translateY(-10px);
+}
+
+.what__show {
+  border-bottom: 3px solid #4ba9ff;
+  text-transform: uppercase;
+  margin-bottom: 80px;
+}
+
+.what__show > a {
+  font-size: 18px;
+  color: #4ba9ff;
+  font-weight: 500;
+}
+
+.payme {
+  width: 100%;
+  height: 700px;
+  background-image: url("../img/paymeback.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.payme__cont1 {
+  height: 550px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.payme__text {
+  width: 570px;
+  height: 100%;
+}
+
+.payme__text > h2 {
+  margin: 140px 0 30px 0;
+  font-size: 62px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.payme__text > h2 > span {
+  color: #4ba9ff;
+}
+
+.payme__text > p {
+  margin-bottom: 70px;
+  color: #cfd2ff;
+}
+
+.payme__btn {
+  display: inline-block;
+}
+
+.payme__screens {
+  width: 470px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.payme__screen1 {
+  width: 200px;
+  height: 355px;
+  overflow: hidden;
+  background-image: url("../img/screen1.png");
+  border-radius: 5px;
+  box-shadow: 0px 50px 30px 0px rgba(64, 72, 90, 0.5);
+}
+
+.payme__screen1:hover {
+  transform: translateY(-20px);
+}
+
+.payme__screen2 {
+  width: 200px;
+  height: 355px;
+  overflow: hidden;
+  background-image: url("../img/screen2.png");
+  border-radius: 5px;
+  box-shadow: 0px 50px 30px 0px rgba(64, 72, 90, 0.5);
+}
+
+.payme__screen2:hover {
+  transform: translateY(-20px);
+}
+
+.payme__cont2 {
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #7a62b7;
+}
+
+.payme__sec {
+  width: 270px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.payme__sec > h4 {
+  font-size: 16px;
+  color: #a8a4e2;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.payme__sec > h3 {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.payme__sec:hover {
+  border-top: 3px solid #fff;
+}
+
+.twitter {
+  width: 100%;
+  height: 560px;
+  background-color: #fff;
+}
+
+.twitter__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.twitter__container > img {
+  height: 50px;
+  margin: 50px 0 50px 0;
+}
+
+.twitter__box {
+  box-shadow: 0px 30px 60px 0px rgba(64, 72, 90, 0.15);
+  width: 830px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.twitter__box > p {
+  margin: 50px 60px 35px 60px;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.twitter__box > p > span {
+  color: #4ba9ff;
+}
+
+.twitter__author {
+  width: 220px;
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.twitter__text {
+  margin-left: 15px;
+}
+
+.twitter__text > h7 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.twitter__text > h7.blue {
+  color: #4ba9ff;
+}
+
+.footer {
+  width: 100%;
+  height: 350px;
+  background-image: url("../img/footerback.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.footer__cont1 {
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__btn {
+  padding: 0 48px;
+}
+
+.footer__text {
+  width: 670px;
+}
+
+.footer__text > p {
+  padding-top: 30px;
+  color: #cfd2ff;
+}
+
+.footer__cont2 {
+  height: 50px;
+  box-sizing: border-box;
+  border-top: 1px solid #7a62b7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__cont2 > h7 {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.footer__cont2 > h7 > span {
+  color: #4ba9ff;
+}
